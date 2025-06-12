@@ -1,0 +1,14 @@
+name: tinyllama-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - torch
+      - transformers
+      - datasets
+      - peft
+      - accelerate
+      - bitsandbytes

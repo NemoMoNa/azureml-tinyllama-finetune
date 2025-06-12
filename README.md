@@ -1,40 +1,29 @@
-# 🧠 Azure ML TinyLlama Fine-Tuning Project
+# azureml-tinyllama-finetune
 
-This is a hands-on mini project demonstrating how to run a TinyLlama 1.1B fine-tuning job on Azure Machine Learning from a Mac mini (M4 Pro).
+Running TinyLlama fine-tuning job on Azure ML from a Mac mini (M4 Pro).  
+This mini project demonstrates a real-world GPU training workflow using Azure Machine Learning CLI.
 
 ## ✅ Highlights
 
-- ✅ Built a real Azure ML pipeline from scratch
-- ✅ Used CLI tools (`az`, `az ml`)
-- ✅ Created and used `environment.yml` and `train_job.yml`
-- ✅ Deployed a GPU training job using `Standard_NC4as_T4_v3`
-- ✅ Learned job tracking, environment management, and workspace setup
-- ✅ Controlled cost by avoiding unnecessary GPU inference
-- ✅ Saved model output for local testing
+- Full Azure ML pipeline from scratch
+- Used `az ml` CLI for training job submission
+- Created `environment.yml` and `train_job.yml`
+- Ran training with GPU cluster (Standard_NC4as_T4_v3)
+- Tracked training progress in Azure ML Studio
+- Uploaded screenshots from Azure ML UI
+- Saved model output for local inference
+- Handled errors, permissions, and cloud cost awareness
 
-## 💻 Files
+## 📁 Files
 
-- `Train_TinyLlama-1.1B-Chat-v1.0.py` — LoRA fine-tuning script
-- `environment.yml` — Conda environment for Azure ML
-- `train_job.yml` — Azure ML job definition
+- `Train_TinyLlama-1.1B-Chat-v1.0.py`: LoRA training script
+- `environment.yml`: Conda environment for Azure ML
+- `train_job.yml`: Job submission file for CLI
+- `screenshots/`: Azure ML Studio screenshots (job, logs, cluster)
 
-## 🧭 Usage (CLI)
+## 📷 Screenshots
 
-To run this project on Azure ML:
+![Job Status](screenshots/job_status.png)  
+![Log Output](screenshots/std_log_output.png)  
+![Compute Cluster](screenshots/compute_cluster.png)
 
-```bash
-az ml job create \
-  --file train_job.yml \
-  --resource-group <your-resource-group> \
-  --workspace-name <your-workspace-name>
-
-## 📷 Screenshots 
-
-### ✅ Job Status Dashboard  
-![Job Status](screenshots/job_status.png)
-
-### ✅ Output + Logs Tab  
-![Logs](screenshots/output_logs.png)
-
-### ✅ Successful GPU Cluster Execution  
-![GPU Cluster](screenshots/gpu_success.png)

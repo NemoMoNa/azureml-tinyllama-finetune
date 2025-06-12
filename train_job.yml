@@ -1,0 +1,7 @@
+command: >-
+  python Train_TinyLlama-1.1B-Chat-v1.0.py
+code: .
+environment: azureml:tinyllama-env:1
+compute: azureml:gpu-cluster
+experiment_name: train-medical-bot
+description: Fine-tune TinyLlama for QA task
