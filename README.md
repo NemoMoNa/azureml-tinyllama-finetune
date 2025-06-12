@@ -27,3 +27,16 @@ This mini project demonstrates a real-world GPU training workflow using Azure Ma
 ![Log Output](screenshots/std_log_output.png)  
 ![Compute Cluster](screenshots/compute_cluster.png)
 
+## ⭐ License
+
+This project utilizes Apache‑2.0‑licensed models:
+
+- [HuatuoGPT-o1-7B](https://huggingface.co/FreedomIntelligence/HuatuoGPT-o1-7B)  
+- [TinyLlama-1.1B-Chat-v1.0](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+
+See the [LICENSE](./LICENSE) file for details.
+
+## 👍 Acknowledgements
+
+- **FreedomIntelligence** for *HuatuoGPT-o1-7B* (Apache‑2.0)
+- **TinyLlama team** for *TinyLlama-1.1B-Chat-v1.0* (Apache‑2.0)
